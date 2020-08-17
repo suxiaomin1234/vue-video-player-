@@ -1,0 +1,228 @@
+
+// 颜色定义规范
+$color-background = #f8f8f8
+$color-background-d = rgba(0, 0, 0, 0.3)
+$color-highlight-background = #333
+$color-dialog-background = #666
+$color-recommend-background = #fff
+$color-theme = #333
+$color-theme-d = rgba(255, 205, 49, 0.5)
+$color-sub-theme = #9523ff
+$color-sub-theme-new = #FD169B
+$color-text = #000
+$color-text-s = rgba(0, 0, 0, 0.1)
+$color-text-d = rgba(0, 0, 0, 0.3)
+$color-text-l = rgba(0, 0, 0, 0.5)
+$color-text-ll = rgba(0, 0, 0, 0.8)
+$color-back-s = rgba(250, 250, 250, 0.1)
+$color-back-d = rgba(250, 250, 250, 0.3)
+$color-back-l = rgba(250, 250, 250, 0.5)
+$color-back-ll = rgba(250, 250, 250, 0.8)
+$color-user-head = #ff8855
+$color-border = #ddd
+$color-text-write = rgba(250, 250, 250, 0.8)
+$map-title-color = #ffa800
+$dateColor = #42a7f9
+$font-size-small-s = 10px
+$font-size-small = 13px
+$font-size-small-t = 12px
+$font-size-small-d = 13px
+$font-size-medium = 14px
+$font-size-medium-x = 16px
+$font-size-large = 18px
+$font-size-large-l = 20px
+$font-size-large-x = 22px
+*
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+.van-hairline--bottom::after, .van-hairline--left::after, .van-hairline--right::after, .van-hairline--surround::after, .van-hairline--top-bottom::after, .van-hairline--top::after, .van-hairline::after
+  // border: transparent
+.font-large
+  font-family: 'Helvetica'
+  font-size: 27px
+  font-weight: 600
+  color: $color-back-ll
+.btn
+  width: 100%
+  margin-top: 40px
+  p
+    text-align: center
+    padding: 10px
+    margin: 20px 10px
+    border-radius: 8px
+  .enter-home
+    background: $color-sub-theme
+    color: #fff
+  .register
+    border: 1px solid $color-sub-theme
+    color: $color-sub-theme
+.van-nav-bar__title
+  margin-top: 0px
+  // color: #fff
+// .van-toast
+// z-index: 2000000000000 !important
+// .van-popup
+// z-index: 2000000000000 !important
+// .van-dialog
+// z-index: 2000000000000 !important
+// .van-modal
+// z-index: 200000000 !important
+.van-nav-bar
+  // background: $color-recommend-background  !important
+  .van-icon
+    color: $color-theme
+  .van-cell-text
+    color: $color-back-ll
+.van-nav-bar__text
+  color: $color-sub-theme !important
+  font-size: $font-size-large !important
+  background: transparent !important
+.van-nav-bar__title
+  font-size: $font-size-large !important
+// .van-cell
+// .van-cell__value
+// span
+// color:$color-text-l !important
+.none
+  padding: 20px
+  text-align: center
+  color: $color-text-l
+input::-webkit-input-placeholder
+  color: $color-text-d
+input::-moz-input-placeholder
+  color: $color-text-d
+input::-ms-input-placeholder
+  color: $color-text-d
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)
+  .head, .head-bg, .cash-head, .header, .chat-head
+    padding-top: 24px !important
+    background: $color-recommend-background
+  .head-bg
+    height: 284px !important
+  .cash-head
+    height: 284px !important
+  .cash-main
+    top: -16px !important
+  #app
+    >div:not(.foot):not(.home)
+      // padding-top: 70px
+    .home
+      .header-box
+        padding-top: 20px
+      .home-box
+        margin-top: -50px !important
+  .header
+    position: fixed
+    width: 100%
+    top: 0
+    z-index: 100000
+.head, .head-bg, .cash-head, .header, .chat-head
+  padding-top: 0px
+.head-bg
+  height: 260px
+.cash-head
+  height: 260px
+.cash-main
+  top: -16px
+.header
+  position: fixed
+  width: 100%
+  top: 0
+  z-index: 100000
+.slide-fade-enter-active, .slide-fade-leave-active, .slide-fade-left-enter-active, .slide-fade-left-leave-active
+  transition: all 0.5s
+.slide-fade-enter
+  transform: translate3d(100%, 0, 0)
+  opacity: 0
+.slide-fade-leave-to
+  position: fixed
+  top: 0
+  left: 0
+  transform: translate3d(-50%, 0, 0)
+  opacity: 0
+.slide-fade-left-enter
+  transform: translate3d(-100%, 0, 0)
+  opacity: 0
+.slide-fade-left-leave-to
+  position: fixed
+  top: 0
+  left: 0
+  transform: translate3d(50%, 0, 0)
+  opacity: 0
+@keyframes fold-left-in
+  0%
+    transform: translate3d(100%, 0, 0)
+  100%
+    transform: translate3d(0, 0, 0)
+@keyframes fold-left-out
+  0%
+    transform: translate3d(0, 0, 0)
+  100%
+    transform: translate3d(-100%, 0, 0)
+.bar-right
+  font-size: $font-size-medium
+.van-tag
+  border: 1px solid !important
+  // font-size: $font-size-small-s !important
+  // padding: 3px 8px
+  line-height: 1
+  // border-radius: 4px
+  position: relative
+  top: -3px !important
+.wh_top_changge
+  li
+    color: $color-text-l !important
+    .wh_jiantou1
+      border-top: 2px solid $color-text-l
+      border-left: 2px solid $color-text-l
+    .wh_jiantou2
+      border-top: 2px solid $color-text-l
+      border-right: 2px solid $color-text-l
+.wh_content_all
+  background: $color-recommend-background !important
+  .wh_content_item
+    color: $color-text-l
+  .wh_isToday
+    background: $color-text-s !important
+  .wh_chose_day
+    background: $dateColor !important
+    color: $color-back-ll
+.wh_item_date
+  color: $color-text-l
+.van-tabs__line
+  // background-color: $dateColor
+.van-tabs--card
+  padding-top: 0
+.van-notice-bar
+  border: 2px solid $color-background
+  color: #1e9ef9
+.van-nav-bar__left
+  .van-nav-bar__arrow
+    font-size: $font-size-large-l
+.icon-down
+  display: inline-block !important
+  transform: rotate(90deg)
+.icon-up
+  display: inline-block !important
+  transform: rotate(-90deg)
+.rate.up
+  margin-top: 0
+  color: #1e9ef9
+  i
+    color: #1e9ef9
+.rate.down
+  margin-top: 0
+  color: #f93848
+  i
+    color: #f93848
+.van-cell__label
+  font-size: $font-size-medium !important
+.red
+  color: #f93848
+.yellow
+  color: #ffbd2c
+.green
+  color: #4fe72d
+.bar-right
+  color: #42a7f9

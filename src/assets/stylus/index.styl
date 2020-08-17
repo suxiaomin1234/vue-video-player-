@@ -1,0 +1,107 @@
+@import 'placeholder.styl'
+.blue-color
+  color: $dateColor !important
+.red-color
+  color: #C7000B !important
+.yellow-color
+  color: #C78700 !important
+.gray
+  color: #585858 !important
+.gray-color
+  color: #88898C !important
+.color-3
+  color: $color-theme !important
+html
+  color: #333
+// flex布局
+.flex
+  display: flex
+  flex-wrap: wrap
+  flex-direction: row
+  justify-content: space-between
+// 2行缩略
+.ellipsis-2
+  display: -webkit-box
+  -webkit-box-orient: vertical
+  -webkit-line-clamp: 2
+  overflow: hidden
+// 3行缩略
+.ellipsis-3
+  display: -webkit-box
+  -webkit-box-orient: vertical
+  -webkit-line-clamp: 3
+  overflow: hidden
+// 居中图
+.cover-wrap
+  position: relative
+  background-repeat: no-repeat
+  background-position: center
+  background-size: cover
+  overflow: hidden
+  .cover-img
+    position: absolute
+    left: 50%
+    top: 50%
+    width: 100%
+    height: auto
+    transform: translate(-50%, -50%)
+// 上下左右居中
+.po-ab-ct
+  position: absolute
+  left: 0
+  top: 0
+  right: 0
+  bottom: 0
+  margin: auto
+// 文本对齐
+.tx-left
+  text-align: left
+.tx-right
+  text-align: right
+// tab栏
+.van-tabs .van-tabs__wrap
+  height: 1.07rem
+.van-tabs .van-tabs__wrap .van-tab
+  font: 500 0.43rem / 1.07rem 'PingFangSC'
+// 输入单元cell
+.van-cell.van-field
+  padding: 0 0.4rem
+  font: 400 0.45rem / 1.39rem 'PingFangSC'
+  color: #000
+  align-items: center
+  &:not(:last-child)::after
+    left: 0.43rem
+// 搜索
+.mall-search .van-search
+  padding: 0.4rem 0 0.4rem 0.27rem
+.mall-search .van-search__content
+  padding: 0
+  background: #F1F1F2
+  border-radius: 0.27rem
+.mall-search .van-search .van-cell.van-field, .search .van-search .van-cell.van-field
+  padding: 0 0.21rem
+  font: 400 0.4rem / 0.59rem 'PingFangSC'
+  color: #88898C
+.mall-search .van-search .van-cell.van-field .van-field__control,.search .van-search .van-cell.van-field  .van-field__control
+  height: 0.97rem;
+// 商品下单栏
+.van-goods-action
+  min-height: 1.6rem
+  background: #fff
+  border-top: 1px solid #EFEFEF
+  .van-goods-action-icon
+    font: 400 0.32rem / 0.45rem 'PingFangSC'
+    color: #1A1A1A
+  .van-goods-action-button
+    height: 1.25rem
+    font: 500 0.48rem / 1.25rem 'PingFangSC'
+    color: #F5F5F5
+  .van-goods-action-button--first
+    background: #E68100
+    border-top-left-radius: 0.16rem
+    border-bottom-left-radius: 0.16rem
+  .van-goods-action-button--last
+    margin-right: 0.27rem
+    background: #C7000B
+    border-top-right-radius: 0.16rem
+    border-bottom-right-radius: 0.16rem

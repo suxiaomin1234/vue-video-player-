@@ -1,0 +1,7 @@
+@font-face {
+    font-family: 'din';
+    src: url('../../assets/fonts/2.woff2') format('woff2'),
+        url('../../assets/fonts/1.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
